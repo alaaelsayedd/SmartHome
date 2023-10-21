@@ -1,0 +1,16 @@
+#include "PORT_Interface.h"
+
+#include "../../LIB/STD_TYPES.h"
+
+
+void PORT_voidInit(void)
+{
+  DDRA_REG = PORTA_DIR;
+  DDRB_REG = PORTB_DIR;
+  DDRC_REG = PORTC_DIR;
+  DDRD_REG = PORTD_DIR;
+  PORTA_REG=PORTA_VALUE;
+  PORTB_REG=PORTB_VALUE;
+  PORTC_REG=PORTC_VALUE;
+  PORTD_REG=PORTD_VALUE;
+}
